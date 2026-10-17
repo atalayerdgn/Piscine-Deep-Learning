@@ -3,7 +3,8 @@ import torch
 
 def describe(x: "torch.Tensor") -> None:
     """
-    To give some informations about Tensor.
+    To give some informations about the tensor like shape, dimensions
+    values etc.
     Args : x {torch.Tensor}
     Returns : None
     """
