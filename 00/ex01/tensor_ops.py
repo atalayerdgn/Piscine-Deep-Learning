@@ -67,7 +67,3 @@ def operations(a: torch.Tensor, b: torch.Tensor) -> tuple:
     txt3 = mean_(a)
     txt4 = flatten(a)
     return txt1 + txt2 + txt3 + txt4
-
-# a = torch.tensor([[1,2],[3,4]])
-# b = torch.tensor([[5,6],[7,8]])
-# print(operations(a,b))
