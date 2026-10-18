@@ -21,8 +21,8 @@
 
     ▸ 
     Device matters: tensors live on CPU or GPU (cuda, mps). Use .to(device) or tensor.cuda() to move them.
-    ▸ 
 
+    ▸ 
     `requires_grad=True` enables autograd — PyTorch tracks operations to compute gradients via .backward().
 
     ▸ 
