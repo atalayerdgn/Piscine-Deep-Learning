@@ -1,5 +1,5 @@
 import torch
-
+ 
 
 def gradient_at(value: float) -> float:
     """
