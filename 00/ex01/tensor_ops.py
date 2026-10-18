@@ -1,7 +1,7 @@
 import torch
 
 
-def sum_(a : torch.Tensor, b: torch.Tensor) -> str:
+def sum_(a: torch.Tensor, b: torch.Tensor) -> str:
     """
     To multiply given tensors using Torch library.
     args :
@@ -13,7 +13,7 @@ def sum_(a : torch.Tensor, b: torch.Tensor) -> str:
     return f"Sum :\n {torch.add(a, b)}\n"
 
 
-def product_matrix(a : torch.Tensor, b: torch.Tensor) -> str:
+def product_matrix(a: torch.Tensor, b: torch.Tensor) -> str:
     """
     To product given tensors using @ operator or torch.mathmul
     args :
@@ -22,7 +22,7 @@ def product_matrix(a : torch.Tensor, b: torch.Tensor) -> str:
     returns :
             str
     """
-    output = f"Matmul : \n {torch.matmul(a,b)}\n"
+    output = f"Matmul : \n {torch.matmul(a, b)} \n"
     if a.shape == b.shape:
         return output
     else:
@@ -42,7 +42,7 @@ def mean_(a: torch.Tensor) -> str:
     return f"Mean of a : {torch.mean(a)}\n"
 
 
-def flatten(a : torch.Tensor) -> str:
+def flatten(a: torch.Tensor) -> str:
     """
     To convert a tensor to 1 dimension tensor.
     args :
@@ -50,9 +50,10 @@ def flatten(a : torch.Tensor) -> str:
     returns :
             str
     """
-    return f"Reshaped a: {a.reshape(1,(a.shape[0] * a.shape[1]))}"
+    return f"Reshaped a: {a.reshape(1, (a.shape[0] * a.shape[1]))}"
 
-def operations(a : torch.Tensor, b : torch.Tensor) -> tuple :
+
+def operations(a: torch.Tensor, b: torch.Tensor) -> tuple:
     """
     all the functions mixed in a one function.
     args :
@@ -61,8 +62,8 @@ def operations(a : torch.Tensor, b : torch.Tensor) -> tuple :
     returns :
             tuple
     """
-    txt1 = sum_(a,b)
-    txt2 = product_matrix(a,b)
+    txt1 = sum_(a, b)
+    txt2 = product_matrix(a, b)
     txt3 = mean_(a)
     txt4 = flatten(a)
     return txt1 + txt2 + txt3 + txt4
